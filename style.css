@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header-area style */
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 248, 146);
+    align-items: center;
+}
+.logo img {
+    width: 150px;
+}
+.menu-area > ul{
+    list-style: none;
+    display: flex;
+}
+.menu-area > ul > li{
+    position: relative;
+    padding-right: 10px;
+}
+.menu-area > ul > li > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: block;
+    transition-duration: 1s;
+}
+.menu-area > ul > li > a:hover{
+    background-color: rgb(27, 11, 248);
+    border: 1px solid red;
+}
+/* dropdown style */
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120px;
+    list-style: none;
+    background-color: rgb(225, 0, 255);
+    display: none;
+    padding: 8px;
+}
+.menu-area ul li:hover .dropdown{
+    display: block;
+}
+.dropdown li a{
+    transition-duration: 1s;
+}
+.menu-area ul .dropdown li a:hover{
+    background-color: rgb(171, 253, 6);
+    padding: 3px 7px;
+    border-radius: 3px;
+    border: 1px solid red;
+}
+.dropdown li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* dropdown02 style */
+.dropdown02{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    list-style: none;
+    background-color: rgb(253, 8, 110);
+    display: none;
+    padding: 8px;
+    border-radius: 2px;
+}
+.dropdown02 li a{
+    transition-duration: 1s;
+}
+.menu-area ul .dropdown02 li a:hover{
+    background-color: rgb(6, 154, 253);
+    padding: 3px 7px;;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 238, 0);
+}
+
+.menu-area ul li:hover .dropdown02{
+    display: block;
+}
+.dropdown02 li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(24, 12, 12);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* dropdown03 style */
+.dropdown03{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    background-color: rgb(253, 8, 110);
+    display: none;
+    padding: 8px;
+    border-radius: 2px;
+}
+.dropdown03 li a{
+    transition-duration: 1s;
+}
+.menu-area ul .dropdown03 li a:hover{
+    background-color: rgb(175, 6, 253);
+    padding: 3px 7px;;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 238, 0);
+}
+.menu-area ul li:hover .dropdown03{
+    display: block;
+}
+.dropdown03 li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(24, 10, 16);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* dropdown04 style */
+.dropdown04{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 225px;
+    list-style: none;
+    background-color: rgb(253, 8, 110);
+    display: none;
+    padding: 8px;
+    border-radius: 2px;
+}
+.dropdown04 li a{
+    transition-duration: 1s;
+}
+.menu-area ul .dropdown04 li a:hover{
+    background-color: rgb(64, 253, 6);
+    padding: 3px 7px;;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 238, 0);
+}
+.menu-area ul li:hover .dropdown04{
+    display: block;
+}
+.dropdown04 li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(32, 12, 21);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* dropdown05 style */
+.dropdown05{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120px;
+    list-style: none;
+    background-color: rgb(225, 0, 255);
+    display: none;
+    padding: 8px;
+}
+.dropdown05 li a{
+    transition-duration: 1s;
+}
+.menu-area ul .dropdown05 li a:hover{
+    background-color: rgb(253, 138, 6);
+    padding: 3px 7px;;
+    border-radius: 3px;
+    border: 1px solid red;
+
+}
+.menu-area ul li:hover .dropdown05{
+    display: block;
+}
+.dropdown05 li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* aside wijet style */
+.total-section{
+    background-image: url(images/abcd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.total-section .wijet-area {
+    background-image: linear-gradient(rgb(236, 144, 144), rgb(127, 206, 127));
+    width: 150px;
+    height: 265px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+.total-section .wijet-area .menu-sidebar .side-menu li a{
+    display: block;
+    margin-left: 0;
+}
+.total-section .wijet-area ul{
+    list-style: none;
+    padding: 0px 15px;
+}
+.total-section .wijet-area .menu-sidebar .side-menu li a{
+    list-style: none;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(105, 90, 90);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 3px 7px;
+    list-style-type: square;
+    transition-duration: 1s;
+}
+.total-section .wijet-area .menu-sidebar .side-menu li a:hover{
+    background-color: rgb(244, 248, 11);
+    border: 1px solid rgb(25, 0, 255);
+}
+/* form-style */
+.amar-form{
+    background-color: rgba(37, 35, 35, 0.2);
+    height: 225px;
+    padding: 20px;
+    border: 1px solid red;
+	border-radius: 5px;
+}
+.amar-form input{
+	display: block;
+	font-size: 15px;
+	padding: 4px;
+	color: rgb(253, 8, 8);
+	border-radius: 5px;
+}
+.amar-form label{
+	color: #fff;
+    cursor: pointer;
+	padding: 2px 0;
+	display: block;
+	font-size: 15px;
+	font-family: tahoma;
+}
+.amar-form input[type=submit]{
+	margin-top: 10px;
+	cursor:  pointer;
+	border-radius: 5px;
+}
+/* blog-section style */
+.blog-section{
+    margin-left: 20px;
+}
+.blog-section h1{
+    color: rgb(8, 49, 14);
+    background-color: red;
+    text-transform: capitalize;
+    display: inline;
+    border: 2px solid rgb(71, 2, 2);
+    border-radius: 3px;
+    padding: 2px 7px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.blog-section h1:hover{
+    background-color: #fff;
+}
+.blog-section p{
+    background-color: darkkhaki;
+    padding: 7px;
+    border: 2px solid rgb(3, 3, 253);
+    border-radius: 5px;
+}
+.blog-section .single-blog{
+    background-color: tan;
+}
+.blog-section .single-blog:hover{
+    background-color: yellow;
+    border: 1px solid black;
+}
+/* footer style */
+.foter-section p{
+    text-align: center;
+    color: gold;
+    background-color: skyblue;
+    margin-top: 0;
+    font-size: 22px;
+}

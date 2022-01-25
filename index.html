@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover focus and first-child</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            width: 80%;
+            height: 500px;
+            background-color: rgb(157, 255, 0);
+            transition-duration: 2s;
+        }
+
+        .box p {
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box:hover {
+            background-color: red;
+            width: 100%;
+            font-size: 26px;
+            line-height: 28px;
+            color: chartreuse;
+        }
+
+        .crush:focus {
+            color: blue;
+        }
+
+        ul li:first-child {
+            color: red;
+        }
+
+        ul li:last-child {
+            color: red;
+        }
+
+        ul li:nth-child(2n) {
+            color: yellow;
+        }
+
+        .best h1:nth-child(2n+1) {
+            color: rgb(247, 190, 4);
+        }
+
+        .best h1::before {
+            content: 'special ';
+            color: rgb(25, 184, 11);
+        }
+
+        .best h1::after {
+            content: ' this is';
+            color: rgb(192, 11, 11);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-area">
+        <div class="logo">
+            <img src="images/Nagad-Logo.wine.png" alt="">
+        </div>
+
+        <nav class="menu-area">
+            <ul>
+                <li><a href="index.html">home</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">index</a></li>
+                        <li><a href="position.html">position</a></li>
+                        <li><a href="hero.html">Hero</a></li>
+                        <li><a href="simantic.html">sinatic</a></li>
+                        <li><a href="patri-chai.html">patri-chai</a></li>
+                    </ul>
+                </li>
+                <li><a href="position.html">position</a>
+                    <ul class="dropdown02">
+                        <li><a href="index.html">position ar bebohar</a></li>
+                        <li><a href="position.html">position ar opokar</a></li>
+                        <li><a href="hero.html">position koto propkar</a></li>
+                        <li><a href="simantic.html">position name</a></li>
+                        <li><a href="patri-chai.html">Je jaigai je position</a></li>
+                    </ul>
+                </li>
+                <li><a href="hero.html">hero</a>
+                    <ul class="dropdown03">
+                        <li><a href="index.html">Salman-khan</a></li>
+                        <li><a href="position.html">Amir-khan</a></li>
+                        <li><a href="hero.html">Tiger-shrof</a></li>
+                        <li><a href="simantic.html">Shahrukh khan</a></li>
+                        <li><a href="patri-chai.html">Hrithik</a></li>
+                    </ul>
+                </li>
+                <li><a href="simantic.html">simantic</a>
+                    <ul class="dropdown04">
+                        <li><a href="index.html">Html:5 ar tag</a></li>
+                        <li><a href="position.html">Ar babohar janon</a></li>
+                        <li><a href="hero.html">Code korle jante hobe</a></li>
+                        <li><a href="simantic.html">simantic ar BH</a></li>
+                        <li><a href="patri-chai.html">Nirdeshona boli</a></li>
+                    </ul>
+                </li>
+                <li><a href="patri-chai.html">patri-chai</a>
+                    <ul class="dropdown05">
+                        <li><a href="index.html">katrina</a></li>
+                        <li><a href="position.html">Jaquline</a></li>
+                        <li><a href="hero.html">Sroddha</a></li>
+                        <li><a href="simantic.html">Dipika</a></li>
+                        <li><a href="patri-chai.html">Nora-fatehi</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium quidem quam a eos aliquam
+            corporis unde voluptate, veritatis in mollitia dolores et blanditiis, eveniet ipsam soluta fugiat? Quidem
+            corrupti eaque inventore atque. Quas dolorum velit, animi et quibusdam aut blanditiis, laudantium id quia
+            rerum libero odit, voluptatem temporibus magni! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Assumenda asperiores ab incidunt doloremque, odit voluptatum quae laudantium accusantium deleniti, ipsam
+            optio! Illo id esse voluptatibus facilis quisquam repellat. Asperiores, possimus?Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Cum magnam magni officia exercitationem? Impedit fuga nisi ullam, vero iste
+            itaque architecto dolores voluptate rerum repellendus officia id, sequi adipisci assumenda laborum doloribus
+            fugiat eveniet beatae distinctio veniam non necessitatibus laboriosam. Ipsa adipisci quia optio amet.
+            Corrupti doloremque quae ad fugiat?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur
+            beatae natus similique nobis reprehenderit excepturi, veniam expedita incidunt numquam quas delectus
+            accusamus nisi placeat quia, sunt, iure distinctio fugit rem ratione quo animi obcaecati velit cupiditate?
+            Amet tempore rerum minus dolores vel animi molestias est. Ducimus deserunt sed accusantium, tempore
+            laudantium dolorum praesentium illo nesciunt aut voluptatem? Dolorum error, voluptatum eum omnis repellat
+            illo velit illum obcaecati atque tenetur quidem inventore perspiciatis fugit, repudiandae ipsum temporibus
+            iusto recusandae minima hic?</p>
+
+    </div>
+
+    <input type="text">
+    <input class="crush" type="text">
+    <input type="text">
+    <input type="text">
+
+
+    <ul>
+        <li>some text here-1</li>
+        <li>some text here-2</li>
+        <li>some text here-3</li>
+        <li>some text here-4</li>
+        <li>some text here-5</li>
+        <li>some text here-5</li>
+        <li>some text here-5</li>
+        <li>some text here-5</li>
+        <li>some text here-5</li>
+        <li>some text here-5</li>
+        <li>some text here-5</li>
+    </ul>
+
+    <div class="best">
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+        <h1>my best website</h1>
+    </div>
+
+</body>
+
+</html>
